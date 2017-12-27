@@ -2,35 +2,59 @@
 <html>
 <head>
 	<title>나의 블로그</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script type="text/javascript" src = "C:\Front\블로그만들기\blog\js\myblog.js"></script>
-	<style>
+	
+	
+	
+</head>
+<style>
+
+	:root {
+		--main-meun-font-family : Fantasy;
+		--main-menu-background-color :#f8bbd0;
+	}
+
+	@keyframes hoveringNavMenuColor {
+	from {
+
+	}
+	to {
+		background-color: #f8bbd0;
+		border-left-color: #e2964a;
+		color: #8e658c;
+	}
+}
 
 		.wrapper{width : 100%; height: 900px; margin :0;}
 			
 			.mainManuLeft{width : 15%; height: 100%; background-color : black; float: left;}
 				.mainLogo{width : 75%; height :120px; background-color: black; margin: 13%;}
-				.menuLv1Text{color : white; font-size: 30px; font-family: Fantasy;  text-decoration : underline;}
-				.menuLv1{width : 70%; height:100px;
-				background-color: black; margin: 15%; text-align: center;}
-				.menuLv2{width : 70%; height:100px;
-				background-color: black; margin: 15%; text-align: center;}
-				.menuLv3{width : 70%; height:100px;
-				background-color: black; margin: 15%; text-align: center;}
-			
+				.menuLv1Text{color : white; font-size: 30px; font-family : var(--main-meun-font-family);  text-decoration : underline;}
+				.menuLv1{width : 100%; height:100px; line-height : 80px; background-color: black; text-align: center;}
+				.menuLv1:hover{	max-width :100%; height: 100px; padding-left: 10px;
+								animation-name: hoveringNavMenuColor;
+								animation-duration: 1s;
+								animation-fill-mode:forwards;
+								cursor:pointer;}
+
 			.center{width :70%; height :100%; background-color: gray; float :left;}
 
 			.mainManuRight{width : 15%; height: 100%; background-color : black; float: left;}
-				.board{width : 70%; height: 300px; background-color: white; margin: 15%; }
+				.board{width : 80%; height: 60%; background-color: white; margin : 10% 10% 10px 10%; }
+			    .board .menuBlock{width:100%; height:5%; background-color: #f8bbd0; text-align: center;}
+			    .board .menuBlock .menuBlockText{color: white; font-family : var(--main-meun-font-family);}
+			    .board .boardContents{width:100%; height:19%; text-align: center; border-bottom :1px solid #f8bbd0;}
+			    .board .boardContents .boardText{color : black; text-decoration : none; font-family : var(--main-meun-font-family);
+			    }
 				/*최근 글 목록 5개*/
-				.about{width : 70%; height : 200px; background-color: white; margin: 15%;}
-				.icon{width : 70%; height : 100px; background-color: white; margin : 15%;}
+				.about{width : 80%; height : 20%; background-color: white; margin: auto; }
+				.icon{width : 70%; height : 100px; background-color: white; margin: auto;}
 					.iconL{width :50%; height: 100%; background-color: black; float : left;}
 					.iconR{width :50%; height: 100%; background-color: black; float : right;}
 				
 
 	</style>
-
-</head>
 <body>
 	<div class = "wrapper">
 		
@@ -39,12 +63,12 @@
 				<a href="#"><img src = "C:\Front\블로그만들기\blog\img\Blog.png" width="100%" height="100%"></a>
 			</div>
 			<div class = "menuLv1" id = "menuLv10">
-				<a class = "menuLv1Text" href="#">Menu 1</a>
+				<span><a class = "menuLv1Text" href="#">Menu 1</a></span>
 			</div>
-			<div class = "menuLv2" id = "menuLv20">
+			<div class = "menuLv1" id = "menuLv20">
 				<a class = "menuLv1Text" href="#">Menu 2</a>
 			</div>
-			<div class = "menuLv3" id = "menuLv30">
+			<div class = "menuLv1" id = "menuLv30">
 				<a class = "menuLv1Text" href="#">Menu 3</a>
 			</div>
 		</div>
@@ -52,7 +76,26 @@
 		<div class = "center"></div>
 
 		<div class = "mainManuRight">
-			<div class = "board"></div>
+			<div class = "board">
+				<div class = "menuBlock">
+					<a class = "menuBlockText">Recent Words List</a>
+				</div>
+				<div class = "boardContents">
+					<a class ="boardText" href="#">[CATEGORY]</a>
+				</div>
+				<div class = "boardContents">
+					<a class ="boardText" href="#">[CATEGORY]</a>
+				</div>
+				<div class = "boardContents">
+					<a class ="boardText" href="#">[CATEGORY]</a>
+				</div>
+				<div class = "boardContents">
+					<a class ="boardText" href="#">[CATEGORY]</a>
+				</div>
+				<div class = "boardContents">
+					<a class ="boardText" href="#">[CATEGORY]</a>
+				</div>
+			</div>
 			<div class = "about"></div>
 			<div class = "icon">
 				<div class = "iconL">
