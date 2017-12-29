@@ -9,6 +9,11 @@
 	
 </head>
 <style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	li{list-style-type: none;}
 
 	:root {
 		--main-meun-font-family : Fantasy;
@@ -25,8 +30,20 @@
 		color: #8e658c;
 	}
 }
+	@keyframes hoverAboutColor{
+		from{
+	
 
-		.wrapper{width : 100%; height: 900px; margin :0;}
+		}
+		to{
+			background-color: #f8bbd0;
+			box-shadow:
+			0 0 0 10px rgba(0,0,0,0.5) inset, 
+			0 0 0 150px rgba(0,0,0,0.5) inset;
+		}
+	}
+
+		.wrapper{width : 100%; height: 900px;}
 			
 			.mainManuLeft{width : 15%; height: 100%; background-color : black; float: left;}
 				.mainLogo{width : 75%; height :120px; background-color: black; margin: 13%;}
@@ -39,16 +56,30 @@
 								cursor:pointer;}
 
 			.center{width :70%; height :100%; background-color: gray; float :left;}
+			.center .centerName{width :100%; height: 18%; background-color: red; float: left;  padding-left: 30px;}
+			.center .centerName .mainPageLogo{font-size: 100px; font-family:var(--main-meun-font-family); }
+			.center .centerBoard1 {width: 23%; height: 40%; background-color: white; float: left; margin:15px 15px 15px 14%;}
+			.center .centerBoard2 {width: 23%; height: 40%; background-color: white; float: left; margin:15px;}
+			.center .centerBoard3 {width: 23%; height: 40%; background-color: white; float: left; margin:15px;}
+			.center .centerBoard4 {width: 23%; height: 40%; background-color: white; float: left; margin:15px 15px 15px 14%;}
+			.center .centerBoard5 {width: 23%; height: 40%; background-color: white; float: left; margin:15px;}
+			.center .centerBoard6 {width: 23%; height: 40%; background-color: white; float: left; margin:15px;}
 
 			.mainManuRight{width : 15%; height: 100%; background-color : black; float: left;}
-				.board{width : 80%; height: 60%; background-color: white; margin : 10% 10% 10px 10%; }
+				.board{width : 80%; height: 70%; background-color: white; margin : 10% 10% 10px 10%; }
 			    .board .menuBlock{width:100%; height:5%; background-color: #f8bbd0; text-align: center;}
 			    .board .menuBlock .menuBlockText{color: white; font-family : var(--main-meun-font-family);}
 			    .board .boardContents{width:100%; height:19%; text-align: center; border-bottom :1px solid #f8bbd0;}
 			    .board .boardContents .boardText{color : black; text-decoration : none; font-family : var(--main-meun-font-family);
 			    }
 				/*최근 글 목록 5개*/
-				.about{width : 80%; height : 20%; background-color: white; margin: auto; }
+				.about{width : 80%; height : 8%; background-color: black; text-align: center; margin: auto; padding-top: 10px;}
+				.about:hover{max-width :80%; height: 8%;
+								animation-name: hoverAboutColor;
+								animation-duration: 1s;
+								animation-fill-mode:forwards;
+								cursor:pointer;}
+				.about .resume{color : white; font-size: 40px; font-family: var(--main-meun-font-family); text-decoration-line: none;}				
 				.icon{width : 70%; height : 100px; background-color: white; margin: auto;}
 					.iconL{width :50%; height: 100%; background-color: black; float : left;}
 					.iconR{width :50%; height: 100%; background-color: black; float : right;}
@@ -60,20 +91,43 @@
 		
 		<div class = "mainManuLeft">
 			<div class = "mainLogo">
-				<a href="#"><img src = "C:\Front\블로그만들기\blog\img\Blog.png" width="100%" height="100%"></a>
+				<a href="#">
+					<img src = "C:\Front\블로그만들기\blog\img\Blog.png" width="100%" height="100%"></a>
 			</div>
-			<div class = "menuLv1" id = "menuLv10">
+			<li class = "menuLv1" id = "menuLv10">
 				<span><a class = "menuLv1Text" href="#">Menu 1</a></span>
-			</div>
-			<div class = "menuLv1" id = "menuLv20">
+			</li>
+			<li class = "menuLv1" id = "menuLv20">
 				<a class = "menuLv1Text" href="#">Menu 2</a>
-			</div>
-			<div class = "menuLv1" id = "menuLv30">
+			</li>
+			<li class = "menuLv1" id = "menuLv30">
 				<a class = "menuLv1Text" href="#">Menu 3</a>
-			</div>
+			</li>
 		</div>
 		
-		<div class = "center"></div>
+		<div class = "center">
+			<div class = "centerName">
+				<span class = "mainPageLogo">MainPage</span>
+			</div>
+			<div class = "centerBoard1">
+				<div class = "centerBoardPic">사진</div>
+			</div>
+			<div class = "centerBoard2">
+				<div class = "centerBoardPic">사진</div>
+			</div>
+			<div class = "centerBoard3">
+				<div class = "centerBoardPic">사진</div>
+			</div>
+			<div class = "centerBoard4">
+				<div class = "centerBoardPic">사진</div>
+			</div>
+			<div class = "centerBoard5">
+				<div class = "centerBoardPic">사진</div>
+			</div>
+			<div class = "centerBoard6">
+				<div class = "centerBoardPic">사진</div>
+			</div>
+		</div>
 
 		<div class = "mainManuRight">
 			<div class = "board">
@@ -96,7 +150,9 @@
 					<a class ="boardText" href="#">[CATEGORY]</a>
 				</div>
 			</div>
-			<div class = "about"></div>
+			<div class = "about">
+				<a class = "resume" href="#">RESUME</a>
+			</div>
 			<div class = "icon">
 				<div class = "iconL">
 					<p style =" text-align: center;"><!--이미지 가운데 정렬-->
