@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>나의 블로그</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src = "C:\Front\블로그만들기\blog\js\myblog.js"></script>
+		
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	li{list-style-type: none;}
+
+	:root {
+		--main-meun-font-family : Fantasy;
+		--main-menu-background-color :#f8bbd0;
+	}
+
+	@keyframes hoveringNavMenuColor {
+	from {
+
+	}
+	to {
+		background-color: #f8bbd0;
+		border-left-color: #e2964a;
+		color: #8e658c;
+		}
+	}
+		@keyframes hoverAboutColor{
+		from{
+	
+
+		}
+		to{
+			background-color: #f8bbd0;
+			box-shadow:
+			0 0 0 10px rgba(0,0,0,0.5) inset, 
+			0 0 0 150px rgba(0,0,0,0.5) inset;
+		}
+	}
+
+		.wrapper{width : 100%; height: 900px; margin :0;}
+			
+			.mainManuLeft{width : 15%; height: 100%; background-color : black; float: left;}
+				.mainLogo{width : 75%; height :120px; background-color: black; margin: 13%;}
+				.menuLv1Text{color : white; font-size: 30px; font-family : var(--main-meun-font-family);  text-decoration : underline;}
+				.menuLv1{width : 100%; height:100px; line-height : 80px; background-color: black; text-align: center;}
+				.menuLv1:hover{	max-width :100%; height: 100px; padding-left: 10px;
+								animation-name: hoveringNavMenuColor;
+								animation-duration: 1s;
+								animation-fill-mode:forwards;
+								cursor:pointer;}
+
+			.center{width :70%; height :100%; background-color: gray; float :left;}
+			.center .self-introduce{width :60%; height:35%; background-color: white; margin: 10% 20% 25% 20%; text-align: center;}
+			.center .self-introduce .si-00{font-size: 90px; font-family:Comic Sans MS; margin: 5px;}
+			.center .self-introduce .si-01{font-size: 30px; font-family:Comic Sans MS; }	
+
+			.mainManuRight{width : 15%; height: 100%; background-color : black; float: left;}
+				.board{width : 80%; height: 70%; background-color: white; margin : 10% 10% 10px 10%; }
+			    .board .menuBlock{width:100%; height:5%; background-color: #f8bbd0; text-align: center;}
+			    .board .menuBlock .menuBlockText{color: white; font-family : var(--main-meun-font-family);}
+			    .board .boardContents{width:100%; height:19%; text-align: center; border-bottom :1px solid #f8bbd0;}
+			    .board .boardContents .boardText{color : black; text-decoration : none; font-family : var(--main-meun-font-family);
+			    }
+				/*최근 글 목록 5개*/
+				.about{width : 80%; height : 8%; background-color: black; text-align: center; margin: auto; padding-top: 10px;}
+				.about .resume{color : white; font-size: 40px; font-family: var(--main-meun-font-family); text-decoration-line: none;}
+				.about:hover{max-width :80%; height: 8%;
+								animation-name: hoverAboutColor;
+								animation-duration: 1s;
+								animation-fill-mode:forwards;
+								cursor:pointer;}
+				.icon{width : 70%; height : 100px; background-color: white; margin: auto;}
+					.iconL{width :50%; height: 100%; background-color: black; float : left;}
+					.iconR{width :50%; height: 100%; background-color: black; float : right;}
+				
+
+	</style>
+<body>
+	<div class = "wrapper">
+		
+		<div class = "mainManuLeft">
+			<div class = "mainLogo">
+				<a href="#">
+					<img src = "C:\Front\블로그만들기\blog\img\Blog.png" width="100%" height="100%"></a>
+			</div>
+			<li class = "menuLv1" id = "menuLv10">
+				<span><a class = "menuLv1Text" href="#">Menu 1</a></span>
+			</li>
+			<li class = "menuLv1" id = "menuLv20">
+				<a class = "menuLv1Text" href="#">Menu 2</a>
+			</li>
+			<li class = "menuLv1" id = "menuLv30">
+				<a class = "menuLv1Text" href="#">Menu 3</a>
+			</li>
+		</div>
+		
+		<div class = "center">
+			<div class = "self-introduce">
+				<span class ="si-00">CHUNG GON</span>
+				<span class ="si-00" style="color: #d15555;">OK</span><p/>
+				<span class ="si-01">E-MAIL ADDRESS : </span>
+				<span class ="si-01" style="color: #d15555;">CNDRHS107@GMAIL.COM</span>
+			</div>
+			<div class ="EXPERIENCE"></div>
+		</div>
+
+		<div class = "mainManuRight">
+			<div class = "board">
+				<div class = "menuBlock">
+					<a class = "menuBlockText">Recent Words List</a>
+				</div>
+				<div class = "boardContents">
+					<a class ="boardText" href="#">[CATEGORY]</a>
+				</div>
+				<div class = "boardContents">
+					<a class ="boardText" href="#">[CATEGORY]</a>
+				</div>
+				<div class = "boardContents">
+					<a class ="boardText" href="#">[CATEGORY]</a>
+				</div>
+				<div class = "boardContents">
+					<a class ="boardText" href="#">[CATEGORY]</a>
+				</div>
+				<div class = "boardContents">
+					<a class ="boardText" href="#">[CATEGORY]</a>
+				</div>
+			</div>
+			<div class = "about">
+				<a class = "resume" href="#">RESUME</a>
+			</div>
+			<div class = "icon">
+				<div class = "iconL">
+					<p style =" text-align: center;"><!--이미지 가운데 정렬-->
+						<a href="#"><img src = "C:\Front\블로그만들기\blog\img\facebook.png" width = 90% height="90%"></a>
+						</p>						
+				</div>
+				<div class = "iconR">
+					<p style =" text-align: center;">
+						<a href="#"><img src = "C:\Front\블로그만들기\blog\img\kakaotalk.png" width = 90% height="90%"></a>
+						</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+</body>
+</html>
