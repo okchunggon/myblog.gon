@@ -9,9 +9,13 @@
 	
 </head>
 <style>
+		
 	*{
 		margin: 0;
 		padding: 0;
+		width: 100%;
+		height: 100%;
+
 	}
 	li{list-style-type: none;}
 
@@ -38,16 +42,16 @@
 		to{
 			background-color: #f8bbd0;
 			box-shadow:
-			0 0 0 10px rgba(0,0,0,0.5) inset, 
-			0 0 0 150px rgba(0,0,0,0.5) inset;
+			0 0 0 15px rgba(0,0,0,0.5) inset, 
+			0 0 0 100px rgba(0,0,0,0.5) inset;
 		}
 	}
 
-		.wrapper{width : 100%; height: 900px;}
+		.wrapper{width : 100%; height: 100%; position: relative;}
 			
 			.mainManuLeft{width : 15%; height: 100%; background-color : black; float: left;}
 				.mainLogo{width : 75%; height :120px; background-color: black; margin: 13%;}
-				.menuLv1Text{color : white; font-size: 30px; font-family : var(--main-meun-font-family);  text-decoration : underline;}
+				.menuLv1Text{color : white; font-size: 40px; font-family : var(--main-meun-font-family);  text-decoration : underline;}
 				.menuLv1{width : 100%; height:100px; line-height : 80px; background-color: black; text-align: center;}
 				.menuLv1:hover{	max-width :100%; height: 100px; padding-left: 10px;
 								animation-name: hoveringNavMenuColor;
@@ -55,38 +59,35 @@
 								animation-fill-mode:forwards;
 								cursor:pointer;}
 
-			.center{width :70%; height :100%; background-color: gray; float :left;}
-			.center .centerName{width :100%; height: 18%; background-color: red; float: left;  padding-left: 30px;}
-			.center .centerName .mainPageLogo{font-size: 100px; font-family:var(--main-meun-font-family); }
-			.center .centerBoard1 {width: 23%; height: 40%; background-color: white; float: left; margin:15px 15px 15px 14%;}
-			.center .centerBoard2 {width: 23%; height: 40%; background-color: white; float: left; margin:15px;}
-			.center .centerBoard3 {width: 23%; height: 40%; background-color: white; float: left; margin:15px;}
-			.center .centerBoard4 {width: 23%; height: 40%; background-color: white; float: left; margin:15px 15px 15px 14%;}
-			.center .centerBoard5 {width: 23%; height: 40%; background-color: white; float: left; margin:15px;}
-			.center .centerBoard6 {width: 23%; height: 40%; background-color: white; float: left; margin:15px;}
+			.center{width :70%; height :100%; background-color: #d1d1d1; float :left;}
+			.center .centerName{width :100%; height: 10%; background-color: var(--main-menu-background-color); float: left; margin-bottom: 2%;  padding-left: 30px;}
+			.center .centerName .mainPageLogo{font-size: 70px; font-family:var(--main-meun-font-family); }
+			.center .centerPage  {width: 95%; margin:auto; padding-left: 10%;}
+			.center .centerPage .centerBoard {width: 25%; height: 365px; background-color: white; float: left; margin:1.6%;  border-style : solid;}
 
 			.mainManuRight{width : 15%; height: 100%; background-color : black; float: left;}
-				.board{width : 80%; height: 70%; background-color: white; margin : 10% 10% 10px 10%; }
+				.board{width : 80%; height: 70%; background-color: white; margin : 10% 10% 5% 10%; }
 			    .board .menuBlock{width:100%; height:5%; background-color: #f8bbd0; text-align: center;}
-			    .board .menuBlock .menuBlockText{color: white; font-family : var(--main-meun-font-family);}
-			    .board .boardContents{width:100%; height:19%; text-align: center; border-bottom :1px solid #f8bbd0;}
-			    .board .boardContents .boardText{color : black; text-decoration : none; font-family : var(--main-meun-font-family);
+			    .board .menuBlock .menuBlockText{font-size:25px;  color: white; font-family : var(--main-meun-font-family);}
+			    .board .boardContents{ width:100%; height:19%; text-align: center; border-bottom :1px solid #f8bbd0;}
+			    .board .boardContents .boardText{color : black; text-decoration : none;  width: 100%; height: 100%; font-family : var(--main-meun-font-family);
 			    }
 				/*최근 글 목록 5개*/
-				.about{width : 80%; height : 8%; background-color: black; text-align: center; margin: auto; padding-top: 10px;}
+				.about{width : 80%; height : 8%; background-color: black; text-align: center; margin: auto; padding-top: 20px;}
 				.about:hover{max-width :80%; height: 8%;
 								animation-name: hoverAboutColor;
 								animation-duration: 1s;
 								animation-fill-mode:forwards;
 								cursor:pointer;}
 				.about .resume{color : white; font-size: 40px; font-family: var(--main-meun-font-family); text-decoration-line: none;}				
-				.icon{width : 70%; height : 100px; background-color: white; margin: auto;}
-					.iconL{width :50%; height: 100%; background-color: black; float : left;}
-					.iconR{width :50%; height: 100%; background-color: black; float : right;}
+				.icon{width : 70%; height : 100px; background-color: black; margin: 3% auto;}
+					.iconL{width :49%; height: 100%; background-color: black; float : left; margin: 0 2% 0 0;}
+					.iconR{width :49%; height: 100%; background-color: black; float : right;}
 				
 
 	</style>
 <body>
+
 	<div class = "wrapper">
 		
 		<div class = "mainManuLeft">
@@ -109,23 +110,25 @@
 			<div class = "centerName">
 				<span class = "mainPageLogo">MainPage</span>
 			</div>
-			<div class = "centerBoard1">
-				<div class = "centerBoardPic">사진</div>
-			</div>
-			<div class = "centerBoard2">
-				<div class = "centerBoardPic">사진</div>
-			</div>
-			<div class = "centerBoard3">
-				<div class = "centerBoardPic">사진</div>
-			</div>
-			<div class = "centerBoard4">
-				<div class = "centerBoardPic">사진</div>
-			</div>
-			<div class = "centerBoard5">
-				<div class = "centerBoardPic">사진</div>
-			</div>
-			<div class = "centerBoard6">
-				<div class = "centerBoardPic">사진</div>
+			<div class ="centerPage">
+				<div class = "centerBoard">
+					<div class = "centerBoardPic">사진</div>
+				</div>
+				<div class = "centerBoard">
+					<div class = "centerBoardPic">사진</div>
+				</div>
+				<div class = "centerBoard">
+					<div class = "centerBoardPic">사진</div>
+				</div>
+				<div class = "centerBoard">
+					<div class = "centerBoardPic">사진</div>
+				</div>
+				<div class = "centerBoard">
+					<div class = "centerBoardPic">사진</div>
+				</div>
+				<div class = "centerBoard">
+					<div class = "centerBoardPic">사진</div>
+				</div>
 			</div>
 		</div>
 
