@@ -58,8 +58,8 @@
 								animation-duration: 1s;
 								animation-fill-mode:forwards;
 								cursor:pointer;}
-				.menu a{color : white; font-size: 40px; font-family : var(--main-meun-font-family);  text-decoration : underline;}
-				.mainManuLeft .selectBox {width: 50%; height: 80px; margin:200px 25% 0 25%; }
+				.menu a{color : white; font-size: 45px; font-family : var(--main-meun-font-family);  text-decoration : underline; text-decoration-color: #00aeef;}
+				.mainManuLeft .selectBox {position:relative; top:100px;  width: 200px; height: 50px; margin:15% auto; border:2px solid white; border-radius: 5px; }
 				.mainManuLeft .selectBox .write{color: white; font-size: 40px; font-family:var(--main-meun-font-family); background-color: black; text-align: center;} 
 
 
@@ -69,12 +69,14 @@
 			.center .centerPage  {width: 95%; margin:auto; padding-left: 10%;}
 			.center .centerPage .centerBoard {width: 25%; height: 365px; background-color: white; float: left; margin:1.5%;  border: 2px solid; border-radius: 20px;}
 			.center .centerPage .centerBoard .centerBoardPic{width: 100%; height: 85%; border-bottom: 2px solid;}
+			.center .centerPage .centerBoard .centerBoardWrite{width:100%; height: 15%; text-align: center; font-size: 30px;}
+
 
 			.mainManuRight{width : 15%; height: 100%; background-color : black; float: left; }
 				.board{width : 80%; height: 70%; background-color: white; margin : 10% 10% 5% 10%; }
-			    .board .menuBlock{width:100%; height:5%; background-color: #f8bbd0; text-align: center;}
+			    .board .menuBlock{width:100%; height:5%; background-color: #f8bbd0; text-align: center; }
 			    .board .menuBlock .menuBlockText{font-size:25px;  color: white; font-family : var(--main-meun-font-family);}
-			    .board .boardContents{ width:100%; height:19%; text-align: center; border-bottom :1px solid #f8bbd0;}
+			    .board .boardContents{ width:100%; height:19%; text-align: center; border-bottom :1px solid #00aeef;}
 			    .board .boardContents .boardText{color : black; text-decoration : none;  width: 100%; height: 100%; font-family : var(--main-meun-font-family);
 			    }
 				/*최근 글 목록 5개*/
@@ -86,7 +88,7 @@
 								cursor:pointer;}
 				.about .resume{color : white; font-size: 40px; font-family: var(--main-meun-font-family); text-decoration-line: none;}
 				.icon{width : 70%; height : 100px; background-color: black; margin: 3% auto;}
-					.iconL{width :49%; height: 100%; background-color: black; float : left; margin: 0 2% 0 0;}
+					.iconL{width :49%; height: 100%; background-color: black; float : left; margin-right:2%;}
 					.iconR{width :49%; height: 100%; background-color: black; float : right;}
 				
 
@@ -103,44 +105,75 @@
 			</div>
 			<div class= "menubar">
 				<ul class ="menu">
-					<!-- <li><a href="#"></a></li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li> -->
+					<li><a href="#">menu</a></li>
+					<li><a href="#">menu</a></li>
+					<li><a href="#">menu</a></li>
+					<li><a href="#">menu</a></li>  
 				</ul>
 			</div>
 			<div class = "selectBox">
 					<select class = "write">
-						<option selected="WRITE">WRITE</option>
-						<option value="html">html</option>
-						<option value="css">css</option>
-						<option value="javascript">javascript</option>
-						<option value="java">java</option>
+						<option selected="WRITE">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WRITE</option>
+						<option value="html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;html</option>
+						<option value="css">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;css</option>
+						<option value="javascript">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;javascript</option>
+						<option value="java">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;java</option>
 					</select>
 			</div>	
 		</div>
 		
 		<div class = "center">
 			<div class = "centerName">
-				<span class = "mainPageLogo">MainPage</span>
+				<span class = "mainPageLogo">MAINPAGE</span>
 			</div>
 			<div class ="centerPage">
 				<div class = "centerBoard">
-					<div class = "centerBoardPic"></div>
+					<div class = "centerBoardPic">
+						<a href="#">
+							<img style = "border-radius: 20px 20px 0 0;" src = "C:\Front\블로그만들기\blog\img\iphoneX.jpg">
+						</a>
+					</div>
+					<div class ="centerBoardWrite"><strong>iPhoneX</strong></div>
 				</div>
 				<div class = "centerBoard">
-					<div class = "centerBoardPic"></div>
+					<div class = "centerBoardPic">
+						<a href="#">
+							<img style = "border-radius: 20px 20px 0 0;" src = "C:\Front\블로그만들기\blog\img\iphone8.jpg">
+						</a>
+						<div class ="centerBoardWrite"><strong>iPhone8</strong></div>
+					</div>
 				</div>
 				<div class = "centerBoard">
-					<div class = "centerBoardPic"></div>
+					<div class = "centerBoardPic">
+						<a href="#">
+							<img style = "border-radius: 20px 20px 0 0;" src = "C:\Front\블로그만들기\blog\img\galaxyS8.jpg">
+						</a>
+						<div class ="centerBoardWrite"><strong>GalaxyS8</strong></div>
+					</div>
 				</div>
 				<div class = "centerBoard">
-					<div class = "centerBoardPic"></div>
+					<div class = "centerBoardPic">
+						<a href="#">
+							<img style = "border-radius: 20px 20px 0 0;" src = "C:\Front\블로그만들기\blog\img\galaxyNote8.jpg">
+						</a>
+						<div class ="centerBoardWrite"><strong>GalaxyNote8</strong></div>
+					</div>
 				</div>
 				<div class = "centerBoard">
-					<div class = "centerBoardPic"></div>
+					<div class = "centerBoardPic">
+						<a href="#">
+							<img style = "border-radius: 20px 20px 0 0;" src = "C:\Front\블로그만들기\blog\img\airpot.jpg">
+						</a>
+						<div class ="centerBoardWrite"><strong>AirPot</strong></div>
+					</div>
 				</div>
 				<div class = "centerBoard">
-					<div class = "centerBoardPic"></div>
+					<div class = "centerBoardPic">
+							<a href="#">
+							<img style = "border-radius: 20px 20px 0 0;" src = "C:\Front\블로그만들기\blog\img\gearS3.jpg">
+						</a>
+						<div class ="centerBoardWrite"><strong>GearS3</strong></div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -148,7 +181,7 @@
 		<div class = "mainManuRight">
 			<div class = "board">
 				<div class = "menuBlock">
-					<a class = "menuBlockText">Recent Words List</a>
+					<a class = "menuBlockText">RECENT WORDS RIST</a>
 				</div>
 				<div class = "boardContents">
 					<a class ="boardText">[CATEGORY]</a>
